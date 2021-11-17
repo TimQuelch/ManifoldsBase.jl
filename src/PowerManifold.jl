@@ -354,7 +354,7 @@ end
     distance(M::AbstractPowerManifold, p, q)
 
 Compute the distance between `q` and `p` on an [`AbstractPowerManifold`](@ref),
-i.e. from the element wise distances the Forbenius norm is computed.
+i.e. from the element wise distances the Frobenius norm is computed.
 """
 function distance(M::AbstractPowerManifold, p, q)
     sum_squares = zero(number_eltype(p))
